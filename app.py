@@ -4,4 +4,14 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template("beta.html")
+    return render_template("index.html")
+
+@app.route("/proyectos")
+def proyectos():
+    return render_template("proyecto.html")
+
+
+
+if __name__=='__main__':
+    app.run(debug=True)
+
